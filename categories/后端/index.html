@@ -6,7 +6,7 @@
     
     
     
-    <title>Sammie的博客 | Sammie</title>
+    <title>分类: -后端 | Sammie的博客 | Sammie</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -43,7 +43,7 @@
 <meta name="keywords" content="博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sammie的博客">
-<meta property="og:url" content="http://b.sammioe.top/index.html">
+<meta property="og:url" content="http://b.sammioe.top/categories/后端/index.html">
 <meta property="og:site_name" content="Sammie的博客">
 <meta property="og:description" content="个人博客 基于Hexo">
 <meta property="og:locale" content="Chinese">
@@ -85,7 +85,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/">
                     <i class="icon icon-lg icon-home"></i>
                     <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
@@ -99,7 +99,7 @@
                   </a>
               </li>
             
-              <li class="waves-block waves-effect">
+              <li class="waves-block waves-effect active">
                   <a href="/categories">
                     <i class="icon icon-lg icon-th-list"></i>
                     <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
@@ -151,7 +151,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Sammie的博客</div>
+        <div class="flex-col header-title ellipsis">分类: -后端</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -168,19 +168,29 @@
         </a>
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header categories-header">
     
     
     <div class="container fade-scale">
         <div id="myheader">
             <h1 class="title">
-                 
-                    Sammie的博客
                 
             </h1>
             <h5 class="subtitle">
                 
-                    在脱发的道路上努力前行
+                    <h1 id="pagetitle" class="archivestitle"></h1>
+                    <script>
+                        if(location.href.indexOf('about')!=-1){
+                            pagetitle.textContent = '沈祖阳同学';
+                        }else if(location.href.indexOf('tags')!=-1||location.href.indexOf('categories')!=-1){
+                            var a=location.href.substring(location.href.length-5,location.href.length-1);
+                            if(a==='tags'){
+                                pagetitle.textContent = '不积小流无以成江海';
+                            }else if(a==='ries'){
+                                pagetitle.textContent = '不积跬步无以至千里';
+                            }
+                        }
+                    </script>
                 
             </h5>
         </div>
@@ -188,13 +198,28 @@
 
 </header>
 
-<div class="container body-wrap">
-    <ul class="post-list">
+<div class="container body-wrap fade">
     
-        <li class="post-list-item fade">
-            <article id="post-SimpleDateFormat" class="article-card article-type-post" itemprop="blogPost">
-
-    
+        
+        
+        <h5 class="tag-tip">
+            <i class="icon icon-tag"></i>
+            关于
+            <span style="color:rgb(100, 100, 100)">-后端</span>
+            共&nbsp;1&nbsp;篇文章</h5>
+        <div class="waterfall">
+            
+                <article class="archive-article" onclick="location.href='/posts/247372d2/'">
+    <div class="archive-article-date">
+      
+      <time class="my-post-time">
+        <i class="icon icon-lg icon-file-text-o"></i>
+        &nbsp;
+          2019-03-19
+      </time>
+    </div>
+    <div class="archive-article-inner">
+      
 
 
   
@@ -205,58 +230,18 @@
 
 
 
-
-     <div class="post-meta">
-        <time class="post-time" title="2019-03-19 12:14:32" datetime="2019-03-19T04:14:32.000Z" itemprop="datePublished">2019-03-19</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <p>##&#x524D;&#x8A00;<br>  &#x4E4B;&#x524D;&#x5F88;&#x591A;&#x4EBA;&#x559C;&#x6B22;</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
-    
-        <div class="post-more-div">
-            <a href="/posts/247372d2/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
+      <br>
+      
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/后端-日期处理/">-后端 -日期处理</a></li></ul>
 
     </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
+  </article>
+            
+        </div>
     
 
 </div>
+
 
         <footer class="footer">
     <div class="footer-content">
