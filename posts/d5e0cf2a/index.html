@@ -39,18 +39,18 @@
 
 
     
-    <meta name="description" content="&amp;#x524D;&amp;#x8A00;&amp;#xFF1A;&amp;#x6700;&amp;#x8FD1;&amp;#x5728;&amp;#x505A;&amp;#x6BD4;&amp;#x8D5B;&amp;#x7684;&amp;#x4F5C;&amp;#x54C1;&amp;#xFF0C;&amp;#x4E5F;&amp;#x7B97;&amp;#x4E0D;&amp;#x4E0A;&amp;#x662F;&amp;#x4E2A;&amp;#x5927;&amp;#x9879;&amp;#x76EE;&amp;#xFF0C;&amp;#x5F97;&amp;#x4E0D;">
+    <meta name="description" content="前言：最近在做比赛的作品，也算不上是个大项目，得不得奖就全靠随缘了，在这个过程中我发现了一些开发中的问题，在这里统一提出来解决。建议以后自己带项目组最好要组里都能动手做的，前后端和需求和UI比例大概在1:1.5:1:1左右，条件允许的话最好搭配测试人员。否则只能自己测。">
 <meta name="keywords" content="项目,规范">
 <meta property="og:type" content="article">
 <meta property="og:title" content="开发中的软件工程学方法">
 <meta property="og:url" content="http://b.sammioe.top/posts/d5e0cf2a/index.html">
 <meta property="og:site_name" content="Sammie的博客">
-<meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#xFF1A;&amp;#x6700;&amp;#x8FD1;&amp;#x5728;&amp;#x505A;&amp;#x6BD4;&amp;#x8D5B;&amp;#x7684;&amp;#x4F5C;&amp;#x54C1;&amp;#xFF0C;&amp;#x4E5F;&amp;#x7B97;&amp;#x4E0D;&amp;#x4E0A;&amp;#x662F;&amp;#x4E2A;&amp;#x5927;&amp;#x9879;&amp;#x76EE;&amp;#xFF0C;&amp;#x5F97;&amp;#x4E0D;">
+<meta property="og:description" content="前言：最近在做比赛的作品，也算不上是个大项目，得不得奖就全靠随缘了，在这个过程中我发现了一些开发中的问题，在这里统一提出来解决。建议以后自己带项目组最好要组里都能动手做的，前后端和需求和UI比例大概在1:1.5:1:1左右，条件允许的话最好搭配测试人员。否则只能自己测。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-17T08:44:36.896Z">
+<meta property="og:updated_time" content="2019-04-17T08:46:16.197Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开发中的软件工程学方法">
-<meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00;&amp;#xFF1A;&amp;#x6700;&amp;#x8FD1;&amp;#x5728;&amp;#x505A;&amp;#x6BD4;&amp;#x8D5B;&amp;#x7684;&amp;#x4F5C;&amp;#x54C1;&amp;#xFF0C;&amp;#x4E5F;&amp;#x7B97;&amp;#x4E0D;&amp;#x4E0A;&amp;#x662F;&amp;#x4E2A;&amp;#x5927;&amp;#x9879;&amp;#x76EE;&amp;#xFF0C;&amp;#x5F97;&amp;#x4E0D;">
+<meta name="twitter:description" content="前言：最近在做比赛的作品，也算不上是个大项目，得不得奖就全靠随缘了，在这个过程中我发现了一些开发中的问题，在这里统一提出来解决。建议以后自己带项目组最好要组里都能动手做的，前后端和需求和UI比例大概在1:1.5:1:1左右，条件允许的话最好搭配测试人员。否则只能自己测。">
     
         <link rel="alternate" type="application/atom+xml" title="Sammie的博客" href="/atom.xml">
     
@@ -229,6 +229,7 @@
         <div class="post-content" id="post-content" itemprop="postContent">
             <p>&#x524D;&#x8A00;&#xFF1A;&#x6700;&#x8FD1;&#x5728;&#x505A;&#x6BD4;&#x8D5B;&#x7684;&#x4F5C;&#x54C1;&#xFF0C;&#x4E5F;&#x7B97;&#x4E0D;&#x4E0A;&#x662F;&#x4E2A;&#x5927;&#x9879;&#x76EE;&#xFF0C;&#x5F97;&#x4E0D;&#x5F97;&#x5956;&#x5C31;&#x5168;&#x9760;&#x968F;&#x7F18;&#x4E86;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x6211;&#x53D1;&#x73B0;&#x4E86;&#x4E00;&#x4E9B;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x7EDF;&#x4E00;&#x63D0;&#x51FA;&#x6765;&#x89E3;&#x51B3;&#x3002;&#x5EFA;&#x8BAE;&#x4EE5;&#x540E;&#x81EA;&#x5DF1;&#x5E26;&#x9879;&#x76EE;&#x7EC4;&#x6700;&#x597D;&#x8981;&#x7EC4;&#x91CC;&#x90FD;&#x80FD;&#x52A8;&#x624B;&#x505A;&#x7684;&#xFF0C;&#x524D;&#x540E;&#x7AEF;&#x548C;&#x9700;&#x6C42;&#x548C;UI&#x6BD4;&#x4F8B;&#x5927;&#x6982;&#x5728;1:1.5:1:1&#x5DE6;&#x53F3;&#xFF0C;&#x6761;&#x4EF6;&#x5141;&#x8BB8;&#x7684;&#x8BDD;&#x6700;&#x597D;&#x642D;&#x914D;&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;&#x3002;&#x5426;&#x5219;&#x53EA;&#x80FD;&#x81EA;&#x5DF1;&#x6D4B;&#x3002;</p>
 <hr>
+<a id="more"></a>
 <h2 id="&#x89C4;&#x8303;"><a href="#&#x89C4;&#x8303;" class="headerlink" title="&#x89C4;&#x8303;"></a>&#x89C4;&#x8303;</h2><p>&#x8FD9;&#x662F;&#x6211;&#x89C9;&#x5F97;&#x6700;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x5C31;&#x662F;&#x89C4;&#x8303;&#xFF0C;&#x5F88;&#x591A;&#x4EBA;&#x4E0D;&#x592A;&#x7406;&#x89E3;&#x4E3A;&#x4EC0;&#x4E48;&#x963F;&#x91CC;&#x8981;&#x5F00;&#x53D1;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x89C4;&#x8303;&#x9650;&#x5236;&#x63D2;&#x4EF6;&#xFF0C;&#x4ECE;&#x6211;&#x4E2A;&#x4EBA;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x7684;&#x7ECF;&#x9A8C;&#x6765;&#x770B;&#xFF0C;&#x8FD9;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x73AF;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x89C9;&#x5F97;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x65F6;&#x95F4;&#x8017;&#x8D39;&#x6700;&#x591A;&#x7684;&#xFF0C;&#x5F80;&#x5F80;&#x5C31;&#x662F;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6700;&#x660E;&#x663E;&#x7684;&#x5C31;&#x662F;&#x5B66;&#x751F;&#x7684;&#x4EA7;&#x54C1;&#x548C;&#x4E13;&#x4E1A;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x4F5C;&#x54C1;&#xFF0C;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#x5B66;&#x751F;&#x53EF;&#x80FD;&#x6709;&#x5F88;&#x591A;&#x79CD;&#x60F3;&#x6CD5;&#xFF0C;&#x4E13;&#x4E1A;&#x4EBA;&#x5458;&#x4E00;&#x770B;&#x5C31;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x600E;&#x4E48;&#x5199;&#xFF0C;&#x800C;&#x4E14;&#x77E5;&#x9053;&#x5229;&#x5F0A;&#x5728;&#x54EA;&#x91CC;&#x3002;&#x7531;&#x4E8E;&#x4E0D;&#x540C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x6280;&#x672F;&#x7D20;&#x517B;&#x4E0D;&#x540C;&#xFF0C;&#x5BFC;&#x81F4;&#x5408;&#x4F5C;&#x4E0A;&#x4F1A;&#x51FA;&#x73B0;&#x5404;&#x5F0F;&#x5404;&#x6837;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x589E;&#x5927;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x3002;&#x9700;&#x6C42;&#x5206;&#x6790;&#x4E5F;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x73AF;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x4EA7;&#x54C1;&#x7ECF;&#x7406;&#x4F1A;&#x505A;&#x8FD9;&#x4E2A;&#xFF0C;&#x4F46;&#x662F;&#x540E;&#x7AEF;&#x4E5F;&#x8981;&#x5728;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#x6CE8;&#x610F;&#x597D;&#x53EF;&#x91CD;&#x590D;&#x5229;&#x7528;&#x6027;&#x3002;</p>
 <h5 id="&#x5B57;&#x6BB5;"><a href="#&#x5B57;&#x6BB5;" class="headerlink" title="&#x5B57;&#x6BB5;"></a>&#x5B57;&#x6BB5;</h5><p>&#x524D;&#x540E;&#x7AEF;&#x4EA4;&#x4E92;&#x7684;&#x65F6;&#x5019;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x5F00;&#x53D1;&#xFF0C;&#x4E00;&#x822C;&#x8981;&#x6C42;&#x540E;&#x7AEF;&#x7528;postman&#x6D4B;&#x8BD5;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x7ED9;&#x4E00;&#x4E2A;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4E5F;&#x66F4;&#x65B9;&#x4FBF;&#x524D;&#x7AEF;&#x5DE5;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x5E94;&#x8BE5;&#x8981;&#x91C7;&#x7528;swagger&#x3002;</p>
 <h5 id="&#x9759;&#x6001;&#x8D44;&#x6E90;"><a href="#&#x9759;&#x6001;&#x8D44;&#x6E90;" class="headerlink" title="&#x9759;&#x6001;&#x8D44;&#x6E90;"></a>&#x9759;&#x6001;&#x8D44;&#x6E90;</h5><p>&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#x7B49;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4E0A;&#x4F20;&#x540E;&#x5E94;&#x8BE5;&#x653E;&#x5728;OSS&#x4E0A;&#xFF0C;&#x4E2A;&#x4EBA;&#x63A8;&#x8350;&#x963F;&#x91CC;&#x4E91;&#x6216;&#x8005;&#x4E03;&#x725B;&#x7684;&#x3002;</p>
@@ -266,7 +267,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2019-04-17T08:44:36.896Z" itemprop="dateUpdated">2019-04-17 16:44:36</time>
+    最后更新：<time datetime="2019-04-17T08:46:16.197Z" itemprop="dateUpdated">2019-04-17 16:46:16</time>
 </span>
 
 
@@ -313,7 +314,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/d5e0cf2a/&title=《开发中的软件工程学方法》 — Sammie的博客&source=个人博客 基于Hexo" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/d5e0cf2a/&title=《开发中的软件工程学方法》 — Sammie的博客&source=前言：最近在做比赛的作品，也算不上是个大项目，得不得奖就全靠随缘了，在这个过程中我发现了一些开发中的问题，在这里统一提出来解决。建议以后自己带项目组最好要..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -495,7 +496,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/d5e0cf2a/&title=《开发中的软件工程学方法》 — Sammie的博客&source=个人博客 基于Hexo" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/d5e0cf2a/&title=《开发中的软件工程学方法》 — Sammie的博客&source=前言：最近在做比赛的作品，也算不上是个大项目，得不得奖就全靠随缘了，在这个过程中我发现了一些开发中的问题，在这里统一提出来解决。建议以后自己带项目组最好要..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
