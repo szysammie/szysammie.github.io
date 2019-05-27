@@ -6,13 +6,13 @@
     
     
     
-    <title>VueAndHtml | Sammie的博客 | Sammie</title>
+    <title>crawler | Sammie的博客 | Sammie</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="Vue,前端,HTTP">
+    <meta name="keywords" content="后端,爬虫">
     
     
 
@@ -39,18 +39,20 @@
 
 
     
-    <meta name="description" content="####           document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img">
-<meta name="keywords" content="Vue,前端,HTTP">
+    <meta name="description" content="&amp;#x524D;&amp;#x8A00;&amp;#x6211;&amp;#x53C8;&amp;#x56DE;&amp;#x6765;&amp;#x4E86;&amp;#xFF01;&amp;#x7ECF;&amp;#x8FC7;&amp;#x4E86;&amp;#x4E00;&amp;#x957F;&amp;#x4E32;&amp;#x7684;&amp;#x6BD4;&amp;#x8D5B;&amp;#x548C;&amp;#x9879;&amp;#x76EE;&amp;#x4EE5;&amp;#x540E;&amp;#xFF0C;&amp;#x6210;&amp;#x529F;">
+<meta name="keywords" content="后端,爬虫">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VueAndHtml">
-<meta property="og:url" content="http://b.sammioe.top/posts/5080ff91/index.html">
+<meta property="og:title" content="crawler">
+<meta property="og:url" content="http://b.sammioe.top/posts/d42e5ea2/index.html">
 <meta property="og:site_name" content="Sammie的博客">
-<meta property="og:description" content="####           document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img">
+<meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x6211;&amp;#x53C8;&amp;#x56DE;&amp;#x6765;&amp;#x4E86;&amp;#xFF01;&amp;#x7ECF;&amp;#x8FC7;&amp;#x4E86;&amp;#x4E00;&amp;#x957F;&amp;#x4E32;&amp;#x7684;&amp;#x6BD4;&amp;#x8D5B;&amp;#x548C;&amp;#x9879;&amp;#x76EE;&amp;#x4EE5;&amp;#x540E;&amp;#xFF0C;&amp;#x6210;&amp;#x529F;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-18T11:35:28.188Z">
+<meta property="og:image" content="f:/blog/myblog/source/img/z2.png">
+<meta property="og:updated_time" content="2019-05-27T06:57:00.073Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VueAndHtml">
-<meta name="twitter:description" content="####           document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img">
+<meta name="twitter:title" content="crawler">
+<meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x6211;&amp;#x53C8;&amp;#x56DE;&amp;#x6765;&amp;#x4E86;&amp;#xFF01;&amp;#x7ECF;&amp;#x8FC7;&amp;#x4E86;&amp;#x4E00;&amp;#x957F;&amp;#x4E32;&amp;#x7684;&amp;#x6BD4;&amp;#x8D5B;&amp;#x548C;&amp;#x9879;&amp;#x76EE;&amp;#x4EE5;&amp;#x540E;&amp;#xFF0C;&amp;#x6210;&amp;#x529F;">
+<meta name="twitter:image" content="f:/blog/myblog/source/img/z2.png">
     
         <link rel="alternate" type="application/atom+xml" title="Sammie的博客" href="/atom.xml">
     
@@ -155,7 +157,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">VueAndHtml</div>
+        <div class="flex-col header-title ellipsis">crawler</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -192,19 +194,27 @@
 
 <div class="container body-wrap">
     
-<article id="post-VueAndHtml" class="post-article article-type-post fade" itemprop="blogPost">
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#爬虫"><span class="post-toc-number">2.</span> <span class="post-toc-text">爬虫</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#爬虫原理"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">爬虫原理</span></a></li></ol></li></ol><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#准备"><span class="post-toc-number">3.</span> <span class="post-toc-text">准备</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#分析"><span class="post-toc-number">4.</span> <span class="post-toc-text">分析</span></a></li>
+        </nav>
+    </aside>
+   
+<article id="post-crawler" class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">VueAndHtml</h1>
+        <h1 class="post-card-title">crawler</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2019-05-18 19:30:48" datetime="2019-05-18T11:30:48.000Z" itemprop="datePublished">2019-05-18</time>
+            <time class="post-time" title="2019-05-26 20:03:23" datetime="2019-05-26T12:03:23.000Z" itemprop="datePublished">2019-05-26</time>
 
             <br id="mybreak">
             
-	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/杂谈/">-杂谈</a></li></ul>
+<script>
+	mybreak.style="display:none";
+</script>
 
 
             <i>·</i>
@@ -217,10 +227,28 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">2</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>#### </p>
+            <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x6211;&#x53C8;&#x56DE;&#x6765;&#x4E86;&#xFF01;&#x7ECF;&#x8FC7;&#x4E86;&#x4E00;&#x957F;&#x4E32;&#x7684;&#x6BD4;&#x8D5B;&#x548C;&#x9879;&#x76EE;&#x4EE5;&#x540E;&#xFF0C;&#x6210;&#x529F;&#x7684;&#x953B;&#x70BC;&#x51FA;&#x4E86;Vue&#x548C;uni-app&#xFF0C;&#x611F;&#x89C9;&#x81EA;&#x5DF1;&#x8D70;&#x4E0A;&#x4E86;&#x5168;&#x6808;=&#x5168;&#x5E72;&#x7684;&#x4E0D;&#x5F52;&#x8DEF;,&#x4ECE;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x6211;&#x5C31;&#x8981;&#x505A;&#x540E;&#x7AEF;&#x5566;&#xFF0C;&#x6240;&#x4EE5;&#x4EE5;&#x540E;&#x7684;&#x6587;&#x7AE0;&#x66F4;&#x504F;&#x540E;&#x7AEF;&#x548C;&#x5B89;&#x5168;&#x4E00;&#x4E9B;&#x3002;</p>
+<h2 id="&#x722C;&#x866B;"><a href="#&#x722C;&#x866B;" class="headerlink" title="&#x722C;&#x866B;"></a>&#x722C;&#x866B;</h2><p>&#x8FD9;&#x6B21;&#x4E3B;&#x8981;&#x662F;&#x521A;&#x56DE;&#x6765;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x591A;&#x77E5;&#x8BC6;&#x70B9;&#x90FD;&#x6709;&#x70B9;&#x5FD8;&#x4E86;&#xFF0C;&#x52A0;&#x4E0A;&#x4E0D;&#x5C11;&#x505A;java&#x7684;&#x540C;&#x5B66;&#x8BF4;&#x4E0D;&#x592A;&#x4F1A;&#x722C;&#x866B;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x505A;&#x4E00;&#x4E2A;demo&#xFF0C;&#x8BB2;&#x4E00;&#x4E0B;&#x57FA;&#x672C;&#x539F;&#x7406;&#x3002;</p>
+<p>&#x4EC0;&#x4E48;&#x662F;&#x722C;&#x866B;&#x5462;&#xFF1F; &#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5316;&#x722C;&#x53D6;&#x7F51;&#x7EDC;&#x8D44;&#x6E90;&#x7684;&#x811A;&#x672C;&#x3002;&#x7528;python&#x5199;&#x662F;&#x6700;&#x65B9;&#x4FBF;&#x7684;&#xFF0C;java&#x8FD1;&#x5E74;&#x6765;&#x4E5F;&#x5F00;&#x6E90;&#x4E86;&#x4E00;&#x4E9B;&#x6846;&#x67B6;&#xFF0C;&#x603B;&#x7684;&#x8FD8;&#x8BF4;&#x8FD8;&#x884C;&#xFF0C;&#x4E0D;&#x7B97;&#x7279;&#x522B;&#x9EBB;&#x70E6;&#x3002;</p>
+<h4 id="&#x722C;&#x866B;&#x539F;&#x7406;"><a href="#&#x722C;&#x866B;&#x539F;&#x7406;" class="headerlink" title="&#x722C;&#x866B;&#x539F;&#x7406;"></a>&#x722C;&#x866B;&#x539F;&#x7406;</h4><p>&#x722C;&#x866B;&#x7684;&#x539F;&#x7406;&#x4E3B;&#x8981;&#x662F;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#xFF1A;&#x83B7;&#x53D6;html&#x9875;&#x9762;&#x6570;&#x636E;&#xFF0C;&#x89E3;&#x6790;&#x6807;&#x7B7E;&#xFF0C;&#x62FF;&#x5230;&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;<br>&#x662F;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x8FD9;&#x4E48;&#x7B80;&#x5355;.</p>
+<h2 id="&#x51C6;&#x5907;"><a href="#&#x51C6;&#x5907;" class="headerlink" title="&#x51C6;&#x5907;"></a>&#x51C6;&#x5907;</h2><p>&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x7684;&#x5305;&#xFF08;&#x6211;&#x662F;&#x901A;&#x8FC7;maven&#x7BA1;&#x7406;&#x7684;&#xFF09; &#x76F4;&#x63A5;&#x5199;&#x5165;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5199;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x8FD8;&#x9700;&#x8981;commons-io&#x548C;commons-lang3</p>
+<ol>
+<li>httpclient</li>
+<li>slf4j</li>
+<li>jsoup</li>
+<li>mysql-connector-java</li>
+</ol>
+<h2 id="&#x5206;&#x6790;"><a href="#&#x5206;&#x6790;" class="headerlink" title="&#x5206;&#x6790;"></a>&#x5206;&#x6790;</h2><p>&#x5148;&#x6765;&#x770B;&#x770B;&#x5927;&#x4F6C;&#x7684;&#x535A;&#x5BA2;&#xFF08;&#x9B3C;&#x9B3C; &#x6216;&#x8BB8;&#x8FD9;&#x5C31;&#x662F;&#x5927;&#x4F6C;&#x5427;!&#xFF09; &#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x6240;&#x6709;&#x6587;&#x7AE0;&#x7684;&#x94FE;&#x63A5;&#x90FD;&#x662F;&#x5728;/page/&#x9875;&#x7801;&#x6570; &#x6240;&#x4EE5;&#x8FD9;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x722C;&#x53D6;&#x7684;&#x94FE;&#x63A5; &#x901A;&#x8FC7;&#x5FAA;&#x73AF;&#x722C;&#x53D6;&#x6BCF;&#x4E00;&#x9875;&#x7684;&#x6570;&#x636E;</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="F:\blog\myblog\source\img\z2.png" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -246,12 +274,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2019-05-18T11:35:28.188Z" itemprop="dateUpdated">2019-05-18 19:35:28</time>
+    最后更新：<time datetime="2019-05-27T06:57:00.073Z" itemprop="dateUpdated">2019-05-27 14:57:00</time>
 </span>
 
 
         
-        原文链接：<a href="/posts/5080ff91/" target="_blank" rel="external">http://b.sammioe.top/posts/5080ff91/</a>
+        原文链接：<a href="/posts/d42e5ea2/" target="_blank" rel="external">http://b.sammioe.top/posts/d42e5ea2/</a>
         
     </div>
     <footer>
@@ -273,7 +301,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP/">HTTP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/后端/">后端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爬虫/">爬虫</a></li></ul>
 
 
             
@@ -283,7 +311,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://b.sammioe.top/posts/5080ff91/&title=《VueAndHtml》 — Sammie的博客&pic=http://b.sammioe.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://b.sammioe.top/posts/d42e5ea2/&title=《crawler》 — Sammie的博客&pic=http://b.sammioe.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -293,22 +321,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/5080ff91/&title=《VueAndHtml》 — Sammie的博客&source=个人博客 基于Hexo" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/d42e5ea2/&title=《crawler》 — Sammie的博客&source=个人博客 基于Hexo" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://b.sammioe.top/posts/5080ff91/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://b.sammioe.top/posts/d42e5ea2/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《VueAndHtml》 — Sammie的博客&url=http://b.sammioe.top/posts/5080ff91/&via=http://b.sammioe.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《crawler》 — Sammie的博客&url=http://b.sammioe.top/posts/d42e5ea2/&via=http://b.sammioe.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://b.sammioe.top/posts/5080ff91/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://b.sammioe.top/posts/d42e5ea2/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -465,7 +493,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://b.sammioe.top/posts/5080ff91/&title=《VueAndHtml》 — Sammie的博客&pic=http://b.sammioe.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://b.sammioe.top/posts/d42e5ea2/&title=《crawler》 — Sammie的博客&pic=http://b.sammioe.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -475,22 +503,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/5080ff91/&title=《VueAndHtml》 — Sammie的博客&source=个人博客 基于Hexo" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://b.sammioe.top/posts/d42e5ea2/&title=《crawler》 — Sammie的博客&source=个人博客 基于Hexo" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://b.sammioe.top/posts/5080ff91/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://b.sammioe.top/posts/d42e5ea2/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《VueAndHtml》 — Sammie的博客&url=http://b.sammioe.top/posts/5080ff91/&via=http://b.sammioe.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《crawler》 — Sammie的博客&url=http://b.sammioe.top/posts/d42e5ea2/&via=http://b.sammioe.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://b.sammioe.top/posts/5080ff91/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://b.sammioe.top/posts/d42e5ea2/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -501,7 +529,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABzklEQVR42u3aSW7DMBAEwPz/087VQGy5e2jSRlA8CYKW4mUwC39+4nW7W/d3/l4/u3P9tTcvXFzcZe7tcl2Drp9p37024OLinude/6bdTPtWvlVcXNzv5CbJyotghIuL+4+4+XWe0ODi4n4zN0lHZiHpOthtrNVwcXEXuHmXct/1lv4uLi7uiHsbrXwcshK8HvwXFxf3CLcNOnkB0w5jindxcXGPcGetzHZ77f2i+MHFxd3AXS9O2sQlT4OGdRguLu4Cd5a45I3RJMzl7VRcXNwz3NkhqvVyqN1q0TzFxcVd5uaN0ehgRMxKspen/RtcXNzN3BYxS27ycLnUv8HFxX0rNxlp5IOQdtt1oYWLi3ucO0s46kprFOBwcXHPcPNmZRLIZg2RJJji4uKe5OZBpw127f1ixIuLi7uZ2w5BZ8Eob8G8oOPi4h7hLo0xRtw2aD74Gi4u7mburVxJSMq57VgXFxf3DHcWpGYJSv78G9C4uLjL3Px41qwcmgWyYiaMi4u7jZukI7PtrTdno/oJFxf3Q9w29CQlU70xXFzcL+Mm6UteJuUHO3BxcT/FXUlZ8uNZeSrztloNFxd3xM0bpu0xi7b4aQ9w4OLibuD+AmP6dp14XeBVAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAB0UlEQVR42u3azWrEMAxF4bz/S2egq8IQ91zJFikcr0onM/m8Efq7Lnzun8P/c/863888fbrtyJUrt829l4c8s/5uer0/riRXrtxB7jp4kQuQULX+FgmgcuXKfRuXP9P5W65cuf+Xy1/GUyi5cuW+jct/Lm1/rK9xsFaTK1dug5s2TE+nNZv7u3Llyg25uxqgPGVpvV2uXLkj3H4TkxctacoSZGRy5cod4fbHrutnWhmZXLlyR7ioTQnaGWk4q6VWcuXKPc0lwYWvXNTGKrwJK1eu3Bkup/MQ1hnGBMmQXLlyj3F546Mz8qxlW609Ebly5Ta4admTrmLwkUyxdSJXrtxjXN4EScceaahCYU6uXLkjXNLa6KxW1IhBOJMrV+4Il4eVWknDf/PaGwXlypULuKRcIZdJ5x38kmjIKleu3MPcdLyRpiZpGyXIm+TKlbuJWxuy8mvEoxEeKOXKlXuMe4enM17l49vH98qVK3eEm76YL2qkoxRU/MiVK3eQO1nq8OYpysXkypV7mMsDTbpudZXO41XlypX7Mm48/MAlEAmFcuXKfT+XFzC8dVLcE5ErV+4xbmdAUlvXKO6RyZUrd4RbK0XSi6VFTitEypUrt879AJ4cmnnwZKr4AAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
