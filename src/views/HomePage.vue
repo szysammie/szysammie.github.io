@@ -16,17 +16,18 @@ const store = useProfileStore()
     <div class="absolute -bottom-32 left-20 w-96 h-96 bg-sky-400/30 dark:bg-sky-600/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
 
     <div class="w-full max-w-4xl z-10 flex flex-col items-center">
-      <PersonalProfile />
+      <PersonalProfile class="mt-4 mb-8" />
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full animate-fade-in-up px-4">
+      <div class="columns-1 md:columns-2 lg:columns-3 gap-6 w-full animate-fade-in-up px-4 max-w-6xl">
         <LinkCard 
           v-for="link in store.links" 
           :key="link.id" 
           :link="link" 
+          class="mb-6 break-inside-avoid"
         />
       </div>
       
-      <footer class="mt-16 text-gray-500 dark:text-gray-400 text-sm font-light z-10 animate-fade-in flex flex-col items-center gap-2">
+      <footer class="mt-8 mb-4 text-gray-500 dark:text-gray-400 text-sm font-light z-10 animate-fade-in flex flex-col items-center gap-2">
         <p>&copy; {{ new Date().getFullYear() }} {{ store.name }}. All rights reserved.</p>
       </footer>
     </div>
