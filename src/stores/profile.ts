@@ -22,7 +22,7 @@ export const useProfileStore = defineStore('profile', {
         description: '查看我的开源项目',
         url: 'https://github.com/szysammie',
         icon: 'Github',
-        color: '#24292e'
+        color: '#6366f1' // Indigo
       },
       {
         id: 2,
@@ -30,7 +30,7 @@ export const useProfileStore = defineStore('profile', {
         description: '阅读我的技术文章',
         url: 'https://blog.sammie.vip',
         icon: 'FileText',
-        color: '#42b883'
+        color: '#10b981' // Emerald
       },
       {
         id: 3,
@@ -38,7 +38,7 @@ export const useProfileStore = defineStore('profile', {
         description: '实用在线工具集合',
         url: '#',
         icon: 'Wrench',
-        color: '#409eff'
+        color: '#f59e0b' // Amber
       }
     ] as Link[]
   })

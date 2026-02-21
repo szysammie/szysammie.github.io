@@ -15,8 +15,8 @@ const store = useProfileStore()
       />
     </div>
     
-    <h1 class="text-4xl font-bold mb-2 tracking-tight drop-shadow-sm text-gray-900 dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-600 dark:from-indigo-200 dark:to-purple-200">{{ store.name }}</h1>
-    <h2 class="text-xl text-blue-600 dark:text-indigo-300 mb-4 font-semibold tracking-wide bg-white/60 dark:bg-white/5 px-4 py-1 rounded-full backdrop-blur-sm border border-white/60 dark:border-white/10 shadow-sm">{{ store.title }}</h2>
+    <h1 class="text-4xl font-bold mb-2 tracking-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-cyan-500 to-sky-400 dark:from-cyan-300 dark:via-sky-300 dark:to-blue-300 animate-fade-in">{{ store.name }}</h1>
+    <h2 class="text-xl text-blue-700 dark:text-cyan-200 mb-4 font-semibold tracking-wide bg-white/60 dark:bg-white/5 px-4 py-1 rounded-full backdrop-blur-sm border border-white/60 dark:border-white/10 shadow-sm">{{ store.title }}</h2>
     <p class="max-w-lg text-gray-600 dark:text-gray-300 leading-relaxed text-lg font-medium">{{ store.description }}</p>
   </div>
 </template>
