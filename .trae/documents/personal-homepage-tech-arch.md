@@ -25,19 +25,25 @@ graph TD
 
 ## 2. 技术描述
 
-- **前端框架**: Vue 3 + Composition API
-- **UI组件库**: Element Plus
-- **状态管理**: Pinia
-- **构建工具**: Vite
-- **初始化工具**: vite-init
-- **部署平台**: GitHub Pages
-- **代码规范**: ESLint + Prettier
+* **前端框架**: Vue 3 + Composition API
+
+* **UI组件库**: Element Plus
+
+* **状态管理**: Pinia
+
+* **构建工具**: Vite
+
+* **初始化工具**: vite-init
+
+* **部署平台**: GitHub Pages
+
+* **代码规范**: ESLint + Prettier
 
 ## 3. 路由定义
 
-| 路由 | 用途 |
-|-------|---------|
-| / | 首页，展示个人简介和链接卡片 |
+| 路由           | 用途                 |
+| ------------ | ------------------ |
+| /            | 首页，展示个人简介和链接卡片     |
 | /project/:id | 项目详情页（可选），展示具体项目信息 |
 
 ## 4. 项目结构
@@ -75,12 +81,17 @@ szysammie.github.io/
 ## 5. 组件设计
 
 ### 5.1 主要组件
-- **PersonalProfile.vue**: 个人简介组件，显示头像、姓名、职业和简介
-- **LinkCard.vue**: 链接卡片组件，可复用的卡片布局
-- **HomePage.vue**: 首页主组件，组合其他子组件
+
+* **PersonalProfile.vue**: 个人简介组件，显示头像、姓名、职业和简介
+
+* **LinkCard.vue**: 链接卡片组件，可复用的卡片布局
+
+* **HomePage.vue**: 首页主组件，组合其他子组件
 
 ### 5.2 状态管理
+
 使用Pinia管理全局状态：
+
 ```javascript
 // stores/profile.js
 export const useProfileStore = defineStore('profile', {
@@ -112,6 +123,7 @@ export const useProfileStore = defineStore('profile', {
 ## 6. 样式设计
 
 ### 6.1 全局样式
+
 ```css
 /* 渐变背景 */
 body {
@@ -134,13 +146,17 @@ body {
 ```
 
 ### 6.2 响应式断点
-- 移动端: < 768px
-- 平板端: 768px - 1024px
-- 桌面端: > 1024px
+
+* 移动端: < 768px
+
+* 平板端: 768px - 1024px
+
+* 桌面端: > 1024px
 
 ## 7. GitHub Pages 配置
 
 ### 7.1 Vite配置
+
 ```javascript
 // vite.config.js
 import { defineConfig } from 'vite'
@@ -156,7 +172,9 @@ export default defineConfig({
 ```
 
 ### 7.2 部署脚本
+
 在package.json中添加部署脚本：
+
 ```json
 {
   "scripts": {
@@ -168,16 +186,25 @@ export default defineConfig({
 
 ## 8. 性能优化
 
-- 使用Vite的代码分割功能
-- 图片懒加载
-- CSS和JS文件压缩
-- 使用CDN加速静态资源
-- 启用Gzip压缩
+* 使用Vite的代码分割功能
+
+* 图片懒加载
+
+* CSS和JS文件压缩
+
+* 使用CDN加速静态资源
+
+* 启用Gzip压缩
 
 ## 9. 开发规范
 
-- 使用ESLint进行代码检查
-- 使用Prettier进行代码格式化
-- 组件命名采用PascalCase
-- 文件命名采用kebab-case
-- 提交信息遵循Conventional Commits规范
+* 使用ESLint进行代码检查
+
+* 使用Prettier进行代码格式化
+
+* 组件命名采用PascalCase
+
+* 文件命名采用kebab-case
+
+* 提交信息遵循Conventional Commits规范
+

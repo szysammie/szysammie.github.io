@@ -7,11 +7,11 @@ const store = useProfileStore()
 </script>
 
 <template>
-  <div class="min-h-screen w-full flex flex-col items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br from-indigo-50 via-blue-50 to-white">
+  <div class="min-h-screen w-full flex flex-col items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
     <!-- Animated background blobs -->
-    <div class="absolute top-0 left-0 w-96 h-96 bg-purple-300/40 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-    <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-300/40 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-    <div class="absolute -bottom-32 left-20 w-96 h-96 bg-pink-300/40 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-200/30 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-200/30 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-32 left-20 w-[500px] h-[500px] bg-pink-200/30 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-4000"></div>
 
     <div class="w-full max-w-4xl z-10 flex flex-col items-center">
       <PersonalProfile />
@@ -24,8 +24,8 @@ const store = useProfileStore()
         />
       </div>
       
-      <footer class="mt-16 text-gray-500 text-sm font-light z-10 animate-fade-in">
-        &copy; {{ new Date().getFullYear() }} {{ store.name }}. All rights reserved.
+      <footer class="mt-16 text-gray-400 text-sm font-light z-10 animate-fade-in flex flex-col items-center gap-2">
+        <p>&copy; {{ new Date().getFullYear() }} {{ store.name }}. All rights reserved.</p>
       </footer>
     </div>
   </div>
