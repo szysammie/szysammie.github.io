@@ -1,17 +1,19 @@
 <script setup lang="ts">
 import PersonalProfile from '../components/PersonalProfile.vue'
 import LinkCard from '../components/LinkCard.vue'
+import ThemeToggle from '../components/ThemeToggle.vue'
 import { useProfileStore } from '../stores/profile'
 
 const store = useProfileStore()
 </script>
 
 <template>
-  <div class="min-h-screen w-full flex flex-col items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
+  <ThemeToggle />
+  <div class="min-h-screen w-full flex flex-col items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br from-slate-100 via-gray-50 to-zinc-100 dark:from-slate-900 dark:via-zinc-900 dark:to-neutral-900 transition-colors duration-500">
     <!-- Animated background blobs -->
-    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-200/30 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob"></div>
-    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-200/30 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-2000"></div>
-    <div class="absolute -bottom-32 left-20 w-[500px] h-[500px] bg-pink-200/30 rounded-full mix-blend-multiply filter blur-[100px] opacity-70 animate-blob animation-delay-4000"></div>
+    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-300/20 dark:bg-blue-500/10 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-300/20 dark:bg-teal-500/10 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-32 left-20 w-96 h-96 bg-sky-300/20 dark:bg-indigo-500/10 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
 
     <div class="w-full max-w-4xl z-10 flex flex-col items-center">
       <PersonalProfile />
@@ -24,7 +26,7 @@ const store = useProfileStore()
         />
       </div>
       
-      <footer class="mt-16 text-gray-400 text-sm font-light z-10 animate-fade-in flex flex-col items-center gap-2">
+      <footer class="mt-16 text-gray-500 dark:text-gray-400 text-sm font-light z-10 animate-fade-in flex flex-col items-center gap-2">
         <p>&copy; {{ new Date().getFullYear() }} {{ store.name }}. All rights reserved.</p>
       </footer>
     </div>
