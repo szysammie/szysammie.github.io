@@ -43,6 +43,30 @@ export const useProfileStore = defineStore('profile', {
         icon: 'Wrench',
         color: '#f59e0b', // Amber
         heightClass: 'h-56'
+      },
+      {
+        id: 4,
+        title: '项目展示',
+        description: '这里展示了我最近参与的一些商业项目和个人练习作品，涵盖了从移动端到桌面端的全栈开发。',
+        url: '#',
+        icon: 'Layout',
+        color: '#ec4899', // Pink
+      },
+      {
+        id: 5,
+        title: '摄影记录',
+        description: '在代码之外，我也喜欢用镜头记录生活中的光影瞬间。这是我的摄影作品集。',
+        url: '#',
+        icon: 'Camera',
+        color: '#8b5cf6', // Violet
+      },
+      {
+        id: 6,
+        title: '读书笔记',
+        description: '分享我的年度书单和一些深度阅读笔记，涵盖技术、哲学与心理学。',
+        url: '#',
+        icon: 'BookOpen',
+        color: '#3b82f6', // Blue
       }
     ] as Link[]
   })
